@@ -4,7 +4,8 @@ import "@openzeppelin/contracts/utils/cryptography/EIP712.sol";
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "@openzeppelin/contracts/interfaces/IERC1271.sol";
 
-abstract contract ERC7015 is EIP712 {
+/// @title EIP7015: Creator Attribution
+abstract contract EIP7015 is EIP712 {
   error Invalid_Signature();
   event CreatorAttribution(
     bytes32 structHash,
